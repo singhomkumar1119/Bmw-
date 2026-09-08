@@ -1,0 +1,36 @@
+/* index.css */
+.ui-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Let clicks pass through to 3D canvas by default */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  z-index: 10;
+}
+
+.premium-button {
+  pointer-events: auto;
+  background: rgba(25, 25, 25, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Helvetica Neue', sans-serif;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+}
+
+.premium-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  transform: scale(1.02);
+}
+
